@@ -1,15 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable static optimization where possible
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone',
-  experimental: {
-    serverActions: true
+  
+  // Production optimizations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
   },
+  
+  // Image optimization
   images: {
-    domains: ['localhost'],
-    unoptimized: true
+    domains: ['craftflow-pro.vercel.app'],
+    formats: ['image/avif', 'image/webp'],
+  },
+  
+  // Enable experimental features
+  experimental: {
+    serverActions: true,
+    typedRoutes: true,
   }
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
