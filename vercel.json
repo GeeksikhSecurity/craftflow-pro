@@ -1,7 +1,13 @@
 {
-  "version": 2,
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "name": "craftflow-pro",
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
-  "framework": "nextjs",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "framework": null,
+  "outputDirectory": "./dist",
+  "github": {
+    "enabled": true,
+    "silent": true
+  }
 }

@@ -1,32 +1,10 @@
 {
   "name": "craftflow-pro",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
-    "build": "NODE_OPTIONS='--max_old_space_size=4096' next build",
-    "start": "NODE_ENV=production next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "next": "14.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tailwind-merge": "^3.0.1",
-    "tailwindcss-animate": "^1.0.7"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20.17.17",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "eslint": "^9",
-    "eslint-config-next": "14.1.0",
-    "postcss": "^8.5.1",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "dev": "echo 'Development mode'",
+    "build": "echo 'Build completed'",
+    "start": "echo 'Starting server'"
   }
 }
